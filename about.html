@@ -3,28 +3,149 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title></title>
-
 	<style type="text/css">
-		
-		#logo{
-			width: 50px;
-			border-radius: 50px;
-		}
 
-		
-	</style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0d47a1;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #1565c0;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .about-section {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .about-section h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .about-section {
+        padding: 20px;
+      }
+
+      .about-section h2 {
+        font-size: 24px;
+      }
+
+      .about-section p {
+        font-size: 16px;
+      }
+    }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+    
+#logo{
+    width: 50px;
+    border-radius: 50px;
+}
+</style>
+
 
 </head>
 <body>   
 
-	<h1>Rreth Nesh</h1>
+	<header>
+    <h1>Autosalloni</h1>
+  </header>
 
-	<div>
-		<p>“Mirësevini në Autosallon, destinacioni juaj i besueshëm për blerjen e makinave të cilësisë së lartë. Ne ofrojmë një zgjedhje të gjerë të modeleve, nga familjaret e rehatshme deri tek sportivët elegante, për të përmbushur çdo nevojë dhe dëshirë. Me një staf miqësor dhe të trajnuar mirë, ne jemi të përkushtuar për të ju ofruar një përvojë të pakrahasueshme të blerjes, duke siguruar çmime konkurruese dhe kushte fleksible financimi. Zgjidhni Autosallonin tone për një marrëveshje që kombinon vlerën, cilësinë dhe shërbimin e shkëlqyeshëm. Vizitoni ne sot për të zbuluar si mund të bëjmë udhëtimin tuaj më të mirë!”</p>
-	</div>
+  <nav>
+    <a href="#">Ballina</a>
+    <a href="#">Produktet</a>
+    <a href="#">Rreth nesh</a>
+    <a href="#">Kontakti</a>
+  </nav>
 
-	<div id="logo">
+  <div class="container">
+    <section class="about-section">
+      <h2>Rreth Nesh</h2>
+      <p class="box">
+        Autosalloni eshte nje emer i njohur ne tregun e automjeteve ne Kosove, duke ofruar vetura cilesore, te importuara me kujdes dhe te perzgjedhura me profesionalizem. Me pervoje shumevjeçare ne kete industri, ne jemi te përkushtuar tu ofrojme klienteve tane nje pervoj te jashtezakonshme ne blerjen e vetures se tyre te ardhshme.
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB2SOIwYUn6S0d0kXTuOK-wzSBFGf_UXpiTA&s">
+      </p>
+
+      <p>
+        Ne bashkepunojme me partner te besueshem nga vendet e BE-se per te sjelle vetura te testuara, me histori te paster dhe te gatshme per perdorim. Çdo vetur qe shitet nga Autosalloi jone kalon neper nje kontroll teknik te plote, duke siguruar qe çdo detaj eshte ne perputhje me standardet me t larta.
+      </p>
+      <p>
+        Vlerat tona bazohen ne ndershmeri, transparence dhe kenaqesi te klientit. Ne jemi ketu per t ju ndihmuar te gjeni veturën qe i pershtatet stilit dhe buxhetit tuaj. Pavaresisht nese jeni bleres per here te pare apo jeni ne kerkim te nje ndërrimi, Autosalloni jone eshte zgjedhja juaj e duhur.
+      </p>
+      <p>
+        Na vizitoni dhe behuni pjese e nje pervoje te veçante ne blerjen e vetures — aty ku cilesia takon besimin.
+      </p>
+    </section>
+  </div>
+
+  	<div id="logo">
 		<a href="https://www.facebook.com/help/668969529866328/?helpref=uf_share">
 			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCsxUWzSc-v6mbgZV1Pp2CytY91_rU-xvGQ&s" width="40px">
 		</a>
@@ -37,6 +158,11 @@
 		<a href="https://web.telegram.org/">
 			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSCrtkr6BqCw-wNCll93-oeCxaff_Nf4ZeQw&s" width="40px">
 	</div>
+
+
+  <footer>
+    &copy; 2025 Autosalloni | Te gjitha te drejtat e rezervuara
+  </footer>
 
 
 
